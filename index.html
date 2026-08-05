@@ -3,11 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio profissional de Eduardo Rodrigues, Analista de Sistemas Jr. e Desenvolvedor Python Jr.">
+    <title>Eduardo Rodrigues | Portfólio de Tecnologia</title>
+    <meta name="description" content="Portfólio de Eduardo Rodrigues, estudante de Análise e Desenvolvimento de Sistemas com projetos em Python, SQL, automação, banco de dados e visão computacional.">
+    <meta name="author" content="Eduardo Rodrigues">
+    <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#07111f">
-    <title>Eduardo Rodrigues | Portfólio</title>
+    <link rel="canonical" href="https://eduardosrodriguesdev.com.br/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Eduardo Rodrigues | Portfólio de Tecnologia">
+    <meta property="og:description" content="Portfólio de Eduardo Rodrigues, estudante de Análise e Desenvolvimento de Sistemas com projetos em Python, SQL, automação, banco de dados e visão computacional.">
+    <meta property="og:url" content="https://eduardosrodriguesdev.com.br/">
+    <meta property="og:site_name" content="Portfólio de Eduardo Rodrigues">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Eduardo Rodrigues | Portfólio de Tecnologia">
+    <meta name="twitter:description" content="Projetos em Python, SQL, automação, banco de dados e visão computacional.">
+
+    <!--
+        Imagem de compartilhamento pendente: quando assets/imagens/portfolio-preview.png existir,
+        adicione og:image, twitter:image e altere twitter:card para summary_large_image.
+    -->
+    <link rel="icon" href="assets/imagens/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
+
+    <!-- Dados estruturados com informações profissionais públicas. -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Eduardo Rodrigues",
+            "url": "https://eduardosrodriguesdev.com.br/",
+            "sameAs": [
+                "https://github.com/eduardo-s-rodrigues",
+                "https://www.linkedin.com/in/eduardo-rodrigues-402181193/"
+            ],
+            "workLocation": {
+                "@type": "Place",
+                "name": "Piracicaba/SP"
+            },
+            "jobTitle": "Analista de Sistemas Jr. | Desenvolvedor Python Jr."
+        }
+    </script>
 </head>
 
 <body>
@@ -71,12 +110,21 @@
                         <a class="botao botao-secundario" href="https://www.linkedin.com/in/eduardo-rodrigues-402181193/" target="_blank" rel="noopener noreferrer">
                             LinkedIn <span aria-hidden="true">↗</span>
                         </a>
-                        <a class="botao botao-texto" href="assets/curriculo/CV_Eduardo_Rodrigues.pdf" download>Baixar currículo</a>
+                        <!-- Currículo pendente: remova curriculo-pendente e aria-disabled quando o PDF for adicionado. -->
+                        <a
+                            class="botao botao-texto curriculo-pendente"
+                            href="assets/curriculo/CV_Eduardo_Rodrigues.pdf"
+                            download
+                            aria-disabled="true"
+                            aria-describedby="aviso-curriculo"
+                        >
+                            Baixar currículo
+                        </a>
                     </div>
 
                     <p class="inicio-disponibilidade">
                         <span class="indicador-disponivel" aria-hidden="true"></span>
-                        Disponível para oportunidades em tecnologia — Piracicaba/SP e remoto.
+                        Disponível para oportunidades presenciais, híbridas ou remotas — Piracicaba/SP.
                     </p>
                 </div>
 
@@ -110,9 +158,10 @@
                     <p class="secao-indice">01 — Sobre mim</p>
                     <h2 id="titulo-sobre">Tecnologia aplicada a problemas reais</h2>
                     <p>
-                        Estou em transição para a área de tecnologia e atualmente curso Análise e Desenvolvimento de
-                        Sistemas. Tenho experiência prática com Python, SQL, SQLite, Git e GitHub, além de experiência
-                        profissional com liderança, atendimento, organização de processos e resolução de problemas.
+                        Estou em transição para tecnologia e curso Análise e Desenvolvimento de Sistemas. Nos projetos,
+                        pratico Python, SQL, SQLite, Git e GitHub. Minha experiência anterior com liderança, atendimento
+                        e processos fortaleceu a comunicação, a organização e a resolução de problemas que aplico
+                        enquanto continuo aprendendo.
                     </p>
                 </div>
 
@@ -120,12 +169,12 @@
                     <article class="cartao-informacao">
                         <span class="numero-cartao" aria-hidden="true">01</span>
                         <h3>Aprendizado prático</h3>
-                        <p>Desenvolvimento de projetos reais para consolidar lógica, programação, banco de dados e organização de código.</p>
+                        <p>Projetos próprios para exercitar lógica, programação, banco de dados e organização de código.</p>
                     </article>
                     <article class="cartao-informacao">
                         <span class="numero-cartao" aria-hidden="true">02</span>
                         <h3>Visão de processos</h3>
-                        <p>Experiência com rotinas operacionais, liderança, atendimento e melhoria da organização do trabalho.</p>
+                        <p>Vivência com liderança, atendimento e rotinas operacionais para analisar situações e organizar soluções.</p>
                     </article>
                     <article class="cartao-informacao">
                         <span class="numero-cartao" aria-hidden="true">03</span>
@@ -145,39 +194,53 @@
                 </div>
 
                 <div class="projeto-apresentacao">
-                    <div class="projeto-visual" role="img" aria-label="Representação visual temporária do sistema de reconhecimento de placas">
-                        <div class="visual-barra" aria-hidden="true">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <small>portaria_inteligente.py</small>
-                        </div>
-                        <div class="visual-camera" aria-hidden="true">
-                            <span class="canto canto-superior-esquerdo"></span>
-                            <span class="canto canto-superior-direito"></span>
-                            <span class="canto canto-inferior-esquerdo"></span>
-                            <span class="canto canto-inferior-direito"></span>
-                            <div class="placa-veiculo">
-                                <small>BRASIL</small>
-                                <strong>ABC1D23</strong>
+                    <div class="projeto-midia">
+                        <!--
+                            Imagem real futura: substitua o bloco .projeto-visual por:
+                            <img class="projeto-imagem-real" src="assets/imagens/projetos/lpr-demonstracao.webp"
+                                 alt="Demonstração do sistema LPR reconhecendo uma placa veicular"
+                                 width="1200" height="800" loading="lazy">
+                        -->
+                        <div class="projeto-visual" role="img" aria-label="Representação visual temporária do sistema de reconhecimento de placas">
+                            <div class="visual-barra" aria-hidden="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <small>portaria_inteligente.py</small>
                             </div>
-                            <span class="status-leitura">PLACA IDENTIFICADA</span>
-                        </div>
-                        <div class="visual-resultado" aria-hidden="true">
-                            <span>status</span>
-                            <strong>ACESSO VALIDADO</strong>
-                            <span>confiança</span>
-                            <strong>OCR processado</strong>
+                            <div class="visual-camera" aria-hidden="true">
+                                <span class="canto canto-superior-esquerdo"></span>
+                                <span class="canto canto-superior-direito"></span>
+                                <span class="canto canto-inferior-esquerdo"></span>
+                                <span class="canto canto-inferior-direito"></span>
+                                <div class="placa-veiculo">
+                                    <small>BRASIL</small>
+                                    <strong>ABC1D23</strong>
+                                </div>
+                                <span class="status-leitura">PLACA IDENTIFICADA</span>
+                            </div>
+                            <div class="visual-resultado" aria-hidden="true">
+                                <span>status</span>
+                                <strong>ACESSO VALIDADO</strong>
+                                <span>confiança</span>
+                                <strong>OCR processado</strong>
+                            </div>
                         </div>
                     </div>
 
                     <div class="projeto-resumo">
                         <p class="projeto-rotulo">Solução em desenvolvimento</p>
                         <h3>Automação para controle de acesso veicular</h3>
-                        <p>
-                            O projeto combina visão computacional, OCR e banco de dados para reconhecer veículos,
-                            consultar autorizações e manter um histórico organizado de eventos.
-                        </p>
+                        <div class="projeto-contexto">
+                            <div>
+                                <h4>Problema</h4>
+                                <p>Automatizar a identificação de veículos e organizar os registros de acesso.</p>
+                            </div>
+                            <div>
+                                <h4>Solução</h4>
+                                <p>Aplicação em Python que processa imagens, reconhece placas, consulta autorizações e registra eventos.</p>
+                            </div>
+                        </div>
                         <ul class="lista-tags lista-tags-projeto" aria-label="Tecnologias usadas no projeto">
                             <li>Python</li>
                             <li>OpenCV</li>
@@ -195,22 +258,38 @@
                     </div>
                 </div>
 
+                <article class="projeto-desafios" aria-labelledby="titulo-desafios">
+                    <div>
+                        <p class="projeto-rotulo">Desenvolvimento</p>
+                        <h3 id="titulo-desafios">Principais desafios técnicos</h3>
+                    </div>
+                    <ul>
+                        <li>Tratamento de imagens</li>
+                        <li>Reconhecimento OCR</li>
+                        <li>Padrões antigo e Mercosul</li>
+                        <li>Placas de carro e moto</li>
+                        <li>Rotação e orientação da imagem</li>
+                        <li>Redução de registros duplicados</li>
+                        <li>Persistência em SQLite</li>
+                        <li>Modularização</li>
+                        <li>Testes de validação</li>
+                    </ul>
+                </article>
+
                 <div class="projeto-etapas">
                     <article class="cartao-etapa etapa-implementada">
                         <p class="etapa-status"><span aria-hidden="true">✓</span> Implementado</p>
                         <h3>Funcionalidades concluídas</h3>
                         <ul class="lista-verificacao">
-                            <li>Captura e processamento de imagens pela câmera</li>
+                            <li>Captura pela câmera e tratamento de imagens</li>
                             <li>Reconhecimento de caracteres usando OCR</li>
                             <li>Validação de placas antigas e padrão Mercosul</li>
+                            <li>Leitura de placas de carro e moto</li>
                             <li>Cadastro e consulta de veículos</li>
-                            <li>Verificação de veículos autorizados</li>
-                            <li>Identificação de cadastros inativos</li>
-                            <li>Identificação de veículos não cadastrados</li>
-                            <li>Registro de eventos em SQLite</li>
-                            <li>Armazenamento de imagens e logs</li>
-                            <li>Organização modular do código</li>
-                            <li>Testes de validação com pytest</li>
+                            <li>Identificação de autorizado, inativo e não cadastrado</li>
+                            <li>Persistência de eventos e logs em SQLite</li>
+                            <li>Armazenamento de imagens</li>
+                            <li>Código modular e testes com pytest</li>
                         </ul>
                     </article>
 
@@ -218,9 +297,10 @@
                         <p class="etapa-status"><span aria-hidden="true">●</span> Em evolução</p>
                         <h3>Próximas melhorias</h3>
                         <ul class="lista-verificacao">
+                            <li>Melhoria da detecção</li>
                             <li>Melhoria do OCR</li>
                             <li>Interface administrativa</li>
-                            <li>Melhoria na detecção automática</li>
+                            <li>Exclusão e desativação de cadastros</li>
                         </ul>
                     </article>
 
@@ -228,10 +308,10 @@
                         <p class="etapa-status"><span aria-hidden="true">○</span> Futuro</p>
                         <h3>Possibilidades planejadas</h3>
                         <ul class="lista-verificacao">
-                            <li>Integração com portão</li>
-                            <li>Câmera externa</li>
                             <li>YOLO</li>
                             <li>PaddleOCR</li>
+                            <li>Câmera externa</li>
+                            <li>Integração com portão</li>
                         </ul>
                     </article>
                 </div>
@@ -264,9 +344,10 @@
                         <h3>Banco de dados</h3>
                         <ul>
                             <li>SQLite</li>
-                            <li>Fundamentos de bancos relacionais</li>
+                            <li>Bancos relacionais</li>
                             <li>Modelagem</li>
                             <li>Consultas SQL</li>
+                            <li>Validação de dados</li>
                         </ul>
                     </article>
                     <article class="cartao-tecnologia">
@@ -277,12 +358,12 @@
                             <li>Tesseract OCR</li>
                             <li>Processamento de imagens</li>
                             <li>Automação</li>
-                            <li>Validação de dados</li>
+                            <li>Regex</li>
                         </ul>
                     </article>
                     <article class="cartao-tecnologia">
                         <span class="tecnologia-simbolo" aria-hidden="true">&gt;_</span>
-                        <h3>Ferramentas</h3>
+                        <h3>Ferramentas e qualidade</h3>
                         <ul>
                             <li>Git</li>
                             <li>GitHub</li>
@@ -313,8 +394,8 @@
                             controle de estoque, acompanhamento de rotinas e resolução de problemas operacionais.
                         </p>
                         <p class="experiencia-conexao">
-                            Essa vivência fortalece competências transferíveis para tecnologia, como análise de cenários,
-                            comunicação clara, responsabilidade e melhoria contínua de processos.
+                            Essas competências contribuem de forma natural para analisar situações, comunicar decisões,
+                            colaborar com equipes e buscar melhorias em processos também na área de tecnologia.
                         </p>
                         <ul class="lista-tags" aria-label="Competências profissionais">
                             <li>Liderança</li>
@@ -324,6 +405,8 @@
                             <li>Responsabilidade</li>
                             <li>Atendimento</li>
                             <li>Trabalho em equipe</li>
+                            <li>Análise de situações</li>
+                            <li>Melhoria de processos</li>
                         </ul>
                     </div>
                 </article>
@@ -336,8 +419,18 @@
                     <p class="secao-indice">05 — Currículo</p>
                     <h2 id="titulo-curriculo">Conheça minha trajetória completa</h2>
                     <p>Um único currículo direcionado para oportunidades em Sistemas, Dados e Desenvolvimento Python.</p>
+                    <p class="aviso-curriculo" id="aviso-curriculo" role="status" aria-live="polite">
+                        Currículo em preparação. O PDF será disponibilizado neste mesmo endereço.
+                    </p>
                 </div>
-                <a class="botao botao-claro" href="assets/curriculo/CV_Eduardo_Rodrigues.pdf" download>
+                <!-- Currículo pendente: adicione assets/curriculo/CV_Eduardo_Rodrigues.pdf e ative este link. -->
+                <a
+                    class="botao botao-claro curriculo-pendente"
+                    href="assets/curriculo/CV_Eduardo_Rodrigues.pdf"
+                    download
+                    aria-disabled="true"
+                    aria-describedby="aviso-curriculo"
+                >
                     Baixar currículo em PDF <span aria-hidden="true">↓</span>
                 </a>
             </div>
@@ -366,14 +459,21 @@
                         </span>
                         <span aria-hidden="true">↗</span>
                     </a>
-                    <!-- Substitua SEU_EMAIL_AQUI pelo endereço de e-mail profissional. -->
-                    <button class="contato-link" id="botao-copiar-email" type="button" data-email="SEU_EMAIL_AQUI">
-                        <span>
-                            <small>Contato direto</small>
-                            Copiar e-mail
-                        </span>
-                        <span aria-hidden="true">+</span>
-                    </button>
+                    <div class="contato-email">
+                        <button
+                            class="contato-link"
+                            id="botao-copiar-email"
+                            type="button"
+                            data-email="rodrigues.eduardojw@gmail.com"
+                        >
+                            <span>
+                                <small>Contato direto</small>
+                                <span id="texto-copiar-email">Copiar e-mail</span>
+                            </span>
+                            <span aria-hidden="true">+</span>
+                        </button>
+                        <a class="link-enviar-email" href="mailto:rodrigues.eduardojw@gmail.com">Enviar e-mail</a>
+                    </div>
                 </div>
 
                 <p class="mensagem-email" id="mensagem-email" role="status" aria-live="polite"></p>

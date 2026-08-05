@@ -1,102 +1,164 @@
 # Portfólio — Eduardo Rodrigues
 
-Portfólio profissional de página única desenvolvido para apresentar o perfil, os conhecimentos, a experiência e o projeto principal de Eduardo Rodrigues.
+Portfólio profissional de Eduardo Rodrigues, estudante de Análise e Desenvolvimento de Sistemas com foco em Sistemas, Dados, Desenvolvimento Python e Automação.
 
-O projeto foi criado somente com tecnologias nativas da web. Não utiliza frameworks, bibliotecas ou dependências externas.
+O objetivo do site é apresentar de forma direta o perfil profissional, os conhecimentos em construção, a experiência anterior e o projeto **Portaria Inteligente — Reconhecimento de Placas**.
+
+Site: [eduardosrodriguesdev.com.br](https://eduardosrodriguesdev.com.br/)
 
 ## Tecnologias
 
 - HTML5
 - CSS3
 - JavaScript puro
-- Git e GitHub para versionamento e publicação
+- Git e GitHub
+- GitHub Pages
 
-## Estrutura de pastas
+O projeto não utiliza frameworks, bibliotecas de interface ou dependências externas.
+
+## Captura de tela
+
+A captura de tela oficial ainda será adicionada. Quando estiver disponível, ela também poderá ser usada como imagem de compartilhamento do portfólio.
+
+## Estrutura de arquivos
 
 ```text
 portfolio-eduardo-rodrigues/
 ├── index.html
+├── 404.html
+├── CNAME
+├── robots.txt
+├── sitemap.xml
 ├── css/
 │   └── style.css
 ├── js/
 │   └── script.js
 ├── assets/
 │   ├── imagens/
+│   │   ├── favicon.svg
+│   │   ├── portfolio-preview.png        # pendente
 │   │   ├── perfil/
 │   │   └── projetos/
+│   │       └── lpr-demonstracao.webp    # pendente
 │   └── curriculo/
-│       └── CV_Eduardo_Rodrigues.pdf
+│       └── CV_Eduardo_Rodrigues.pdf     # pendente
 ├── README.md
 └── .gitignore
 ```
 
-## Como abrir localmente
+## Como executar localmente
 
-Para uma visualização rápida, abra o arquivo `index.html` diretamente no navegador.
-
-Também é possível usar a extensão **Live Server** no VS Code:
+É possível abrir `index.html` diretamente no navegador. Para uma experiência mais próxima da publicação, use a extensão **Live Server** no VS Code:
 
 1. Instale a extensão Live Server.
 2. Abra a pasta do projeto no VS Code.
-3. Clique com o botão direito sobre `index.html`.
+3. Clique com o botão direito em `index.html`.
 4. Selecione **Open with Live Server**.
 
-## Personalização necessária
+## Como fazer alterações
 
-### Currículo
+Os conteúdos principais ficam em `index.html`, o visual em `css/style.css` e as interações em `js/script.js`.
 
-Coloque o currículo em:
+Antes de alterar, atualize sua cópia local:
+
+```bash
+git pull
+```
+
+Depois de revisar as mudanças, alguns exemplos de commits são:
+
+```bash
+git commit -m "feat: adiciona curriculo ao portfolio"
+git commit -m "feat: adiciona imagem real do projeto lpr"
+git commit -m "fix: ajusta responsividade do menu"
+git commit -m "docs: atualiza instrucoes do projeto"
+```
+
+## Dados de contato
+
+O e-mail profissional está em dois pontos de `index.html`:
+
+- atributo `data-email` do botão **Copiar e-mail**;
+- link `mailto:` da opção **Enviar e-mail**.
+
+Caso o endereço seja alterado, atualize as duas ocorrências.
+
+## Currículo pendente
+
+Coloque o arquivo final exatamente em:
 
 ```text
 assets/curriculo/CV_Eduardo_Rodrigues.pdf
 ```
 
-Mantenha exatamente esse nome para que os dois botões de download funcionem sem alterações adicionais.
+Os dois links já usam esse caminho e o atributo `download`. Enquanto o arquivo não existe, eles possuem a classe `curriculo-pendente` e `aria-disabled="true"` para evitar uma página de erro.
 
-### Imagens
+Depois de adicionar o PDF:
 
-- Foto de perfil: coloque em `assets/imagens/perfil/`.
-- Imagens ou capturas do LPR: coloque em `assets/imagens/projetos/`.
+1. remova a classe `curriculo-pendente` dos dois links em `index.html`;
+2. remova `aria-disabled="true"` dos dois links;
+3. atualize ou remova o texto `#aviso-curriculo` que informa que o arquivo está em preparação.
 
-O projeto LPR usa atualmente um placeholder construído com HTML e CSS. Quando houver uma imagem real, substitua esse bloco no arquivo `index.html` e inclua um texto alternativo descritivo.
+Não crie um PDF vazio apenas para preencher o caminho.
 
-### E-mail
+## Imagem real do LPR
 
-No arquivo `index.html`, procure por:
+Use preferencialmente uma imagem WebP em:
 
 ```text
-SEU_EMAIL_AQUI
+assets/imagens/projetos/lpr-demonstracao.webp
 ```
 
-Substitua o valor presente em `data-email` pelo endereço profissional. O botão de contato passará a copiar esse endereço automaticamente.
+O comentário dentro da seção do projeto em `index.html` mostra o elemento `<img>` preparado para substituir a ilustração feita com HTML e CSS. Mantenha o texto alternativo descritivo, as dimensões e `loading="lazy"`.
 
-### Repositório do LPR
+## Repositório do LPR
 
-No arquivo `index.html`, localize o comentário sobre o repositório LPR. Substitua o link temporário:
+O botão **Ver no GitHub** aponta temporariamente para o perfil:
 
 ```text
 https://github.com/eduardo-s-rodrigues
 ```
 
-pelo endereço exato do projeto.
+Quando o repositório específico estiver disponível, substitua somente esse endereço no link indicado pelo comentário em `index.html`.
 
-## Como publicar no GitHub Pages
+## Imagem de compartilhamento
 
-1. Crie um repositório no GitHub.
-2. Envie os arquivos deste projeto para a branch principal.
-3. No repositório, abra **Settings**.
-4. Acesse **Pages** no menu lateral.
-5. Em **Build and deployment**, escolha **Deploy from a branch**.
-6. Selecione a branch principal e a pasta `/ (root)`.
-7. Salve e aguarde o endereço público ser gerado.
+Adicione a imagem final em:
 
-Como todos os caminhos do projeto são relativos, o site pode ser publicado diretamente na raiz do GitHub Pages.
+```text
+assets/imagens/portfolio-preview.png
+```
+
+Depois, no `<head>` de `index.html`:
+
+1. adicione `og:image` com a URL absoluta da imagem;
+2. adicione `twitter:image` com a mesma URL;
+3. altere `twitter:card` de `summary` para `summary_large_image`.
+
+O HTML contém um comentário marcando esse ponto. Nenhum metadado aponta para a imagem enquanto ela não existe.
+
+## GitHub Pages e domínio
+
+Repositório:
+
+```text
+https://github.com/eduardo-s-rodrigues/portfolio-eduardo-rodrigues
+```
+
+O arquivo `CNAME` contém o domínio personalizado:
+
+```text
+eduardosrodriguesdev.com.br
+```
+
+No GitHub, a publicação deve usar a branch principal e a pasta `/ (root)` em **Settings → Pages**. As configurações DNS são mantidas fora deste projeto.
 
 ## Melhorias futuras
 
-- Adicionar uma imagem real do sistema LPR.
-- Informar o endereço exato do repositório do projeto.
 - Adicionar o currículo final em PDF.
-- Substituir o marcador pelo e-mail profissional.
-- Atualizar o conteúdo à medida que novos projetos e conhecimentos forem desenvolvidos.
-# portfolio-eduardo-rodrigues
+- Substituir a representação visual do LPR por uma imagem real.
+- Informar o repositório exato do LPR.
+- Adicionar a imagem de compartilhamento.
+- Atualizar o conteúdo à medida que novos projetos forem desenvolvidos.
+
+Este portfólio foi construído com HTML, CSS e JavaScript puro para manter o código leve, claro e fácil de estudar.
