@@ -99,3 +99,4 @@ Como todos os caminhos do projeto são relativos, o site pode ser publicado dire
 - Adicionar o currículo final em PDF.
 - Substituir o marcador pelo e-mail profissional.
 - Atualizar o conteúdo à medida que novos projetos e conhecimentos forem desenvolvidos.
+# portfolio-eduardo-rodrigues
