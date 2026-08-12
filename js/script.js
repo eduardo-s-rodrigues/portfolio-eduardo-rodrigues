@@ -4,9 +4,13 @@ const linksDoMenu = menuPrincipal ? menuPrincipal.querySelectorAll("a") : [];
 const botaoCopiarEmail = document.querySelector("#botao-copiar-email");
 const textoCopiarEmail = document.querySelector("#texto-copiar-email");
 const mensagemEmail = document.querySelector("#mensagem-email");
-const linksCurriculoPendentes = document.querySelectorAll(".curriculo-pendente");
-const avisoCurriculo = document.querySelector("#aviso-curriculo");
 const anoAtual = document.querySelector("#ano-atual");
+const conteudoInicio = document.querySelector(".inicio-conteudo");
+
+// Garante um destino válido para o link "Início" mesmo enquanto a marcação do hero é ajustada.
+if (conteudoInicio && !document.querySelector("#inicio")) {
+    conteudoInicio.id = "inicio";
+}
 
 // Controla o menu responsivo e mantém os atributos de acessibilidade atualizados.
 if (botaoMenu && menuPrincipal) {
@@ -52,12 +56,27 @@ if (botaoMenu && menuPrincipal) {
     });
 }
 
+// Mantém o link Início previsível e suave em desktop e mobile.
+document.querySelectorAll('a[href="#inicio"]').forEach((link) => {
+    link.addEventListener("click", (evento) => {
+        evento.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        history.replaceState(null, "", "#inicio");
+    });
+});
+
 // Destaca no menu a seção que ocupa a área central da tela.
-const secoesDaPagina = document.querySelectorAll("main section[id]");
+const secoesDaPagina = Array.from(document.querySelectorAll("section[id]"));
+
+if (conteudoInicio && !secoesDaPagina.includes(conteudoInicio)) {
+    secoesDaPagina.unshift(conteudoInicio);
+}
 
 function atualizarLinkAtivo(idDaSecao) {
     linksDoMenu.forEach((link) => {
-        const linkCorresponde = link.getAttribute("href") === `#${idDaSecao}`;
+        const href = link.getAttribute("href");
+        const linkCorresponde = href === `#${idDaSecao}`;
+
         link.classList.toggle("ativo", linkCorresponde);
 
         if (linkCorresponde) {
@@ -74,15 +93,17 @@ if (secoesDaPagina.length > 0) {
     if ("IntersectionObserver" in window) {
         const observadorDeSecoes = new IntersectionObserver(
             (entradas) => {
-                entradas.forEach((entrada) => {
-                    if (entrada.isIntersecting) {
-                        atualizarLinkAtivo(entrada.target.id);
-                    }
-                });
+                const visivel = entradas
+                    .filter((entrada) => entrada.isIntersecting)
+                    .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+                if (visivel) {
+                    atualizarLinkAtivo(visivel.target.id);
+                }
             },
             {
-                rootMargin: "-35% 0px -55% 0px",
-                threshold: 0
+                rootMargin: "-30% 0px -55% 0px",
+                threshold: [0, 0.15, 0.35]
             }
         );
 
@@ -127,6 +148,10 @@ function copiarEmailComFallback(email) {
 let tempoParaRestaurarTexto;
 
 async function copiarEmail() {
+    if (!botaoCopiarEmail) {
+        return;
+    }
+
     const email = botaoCopiarEmail.dataset.email.trim();
     let copiado = false;
 
@@ -159,16 +184,6 @@ async function copiarEmail() {
 if (botaoCopiarEmail && textoCopiarEmail) {
     botaoCopiarEmail.addEventListener("click", copiarEmail);
 }
-
-linksCurriculoPendentes.forEach((link) => {
-    link.addEventListener("click", (evento) => {
-        evento.preventDefault();
-
-        if (avisoCurriculo) {
-            avisoCurriculo.textContent = "O currículo em PDF ainda será adicionado por Eduardo.";
-        }
-    });
-});
 
 if (anoAtual) {
     anoAtual.textContent = new Date().getFullYear();
