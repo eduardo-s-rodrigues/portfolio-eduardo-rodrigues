@@ -5,11 +5,36 @@ const botaoCopiarEmail = document.querySelector("#botao-copiar-email");
 const textoCopiarEmail = document.querySelector("#texto-copiar-email");
 const mensagemEmail = document.querySelector("#mensagem-email");
 const anoAtual = document.querySelector("#ano-atual");
-const conteudoInicio = document.querySelector(".inicio-conteudo");
 
-// Garante um destino válido para o link "Início" mesmo enquanto a marcação do hero é ajustada.
-if (conteudoInicio && !document.querySelector("#inicio")) {
-    conteudoInicio.id = "inicio";
+// Repara a estrutura do conteúdo principal caso o HTML publicado esteja sem o wrapper do hero.
+const cabecalho = document.querySelector(".cabecalho");
+const rodape = document.querySelector(".rodape");
+const inicioConteudo = document.querySelector(".inicio-conteudo");
+let conteudoPrincipal = document.querySelector("#conteudo-principal");
+
+if (!conteudoPrincipal && cabecalho && rodape) {
+    conteudoPrincipal = document.createElement("main");
+    conteudoPrincipal.id = "conteudo-principal";
+
+    let elemento = cabecalho.nextElementSibling;
+
+    while (elemento && elemento !== rodape) {
+        const proximo = elemento.nextElementSibling;
+        conteudoPrincipal.appendChild(elemento);
+        elemento = proximo;
+    }
+
+    cabecalho.after(conteudoPrincipal);
+}
+
+if (inicioConteudo && !document.querySelector("#inicio")) {
+    const secaoInicio = document.createElement("section");
+    secaoInicio.className = "secao-inicio";
+    secaoInicio.id = "inicio";
+    secaoInicio.setAttribute("aria-labelledby", "titulo-inicio");
+
+    inicioConteudo.before(secaoInicio);
+    secaoInicio.appendChild(inicioConteudo);
 }
 
 // Controla o menu responsivo e mantém os atributos de acessibilidade atualizados.
@@ -66,11 +91,7 @@ document.querySelectorAll('a[href="#inicio"]').forEach((link) => {
 });
 
 // Destaca no menu a seção que ocupa a área central da tela.
-const secoesDaPagina = Array.from(document.querySelectorAll("section[id]"));
-
-if (conteudoInicio && !secoesDaPagina.includes(conteudoInicio)) {
-    secoesDaPagina.unshift(conteudoInicio);
-}
+const secoesDaPagina = Array.from(document.querySelectorAll("main section[id]"));
 
 function atualizarLinkAtivo(idDaSecao) {
     linksDoMenu.forEach((link) => {
@@ -148,7 +169,7 @@ function copiarEmailComFallback(email) {
 let tempoParaRestaurarTexto;
 
 async function copiarEmail() {
-    if (!botaoCopiarEmail) {
+    if (!botaoCopiarEmail || !textoCopiarEmail) {
         return;
     }
 
