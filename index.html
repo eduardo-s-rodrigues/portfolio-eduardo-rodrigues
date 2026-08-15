@@ -4,51 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduardo Rodrigues | Portfólio de Tecnologia</title>
-    <meta name="description" content="Portfólio de Eduardo Rodrigues, estudante de Análise e Desenvolvimento de Sistemas com projetos em Python, SQL, automação, banco de dados e visão computacional.">
+    <meta name="description" content="Portfólio de Eduardo Rodrigues, estudante de Análise e Desenvolvimento de Sistemas com foco em automação, visão computacional, Python e desenvolvimento de sistemas.">
     <meta name="author" content="Eduardo Rodrigues">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#07111f">
     <link rel="canonical" href="https://eduardosrodriguesdev.com.br/">
-
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pt_BR">
-    <meta property="og:title" content="Eduardo Rodrigues | Portfólio de Tecnologia">
-    <meta property="og:description" content="Portfólio de Eduardo Rodrigues, estudante de Análise e Desenvolvimento de Sistemas com projetos em Python, SQL, automação, banco de dados e visão computacional.">
-    <meta property="og:url" content="https://eduardosrodriguesdev.com.br/">
-    <meta property="og:site_name" content="Portfólio de Eduardo Rodrigues">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Eduardo Rodrigues | Portfólio de Tecnologia">
-    <meta name="twitter:description" content="Projetos em Python, SQL, automação, banco de dados e visão computacional.">
-
-    <!--
-        Imagem de compartilhamento pendente: quando assets/imagens/portfolio-preview.png existir,
-        adicione og:image, twitter:image e altere twitter:card para summary_large_image.
-    -->
     <link rel="icon" href="assets/imagens/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio-v2.css">
     <script src="js/script.js" defer></script>
-
-    <!-- Dados estruturados com informações profissionais públicas. -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Eduardo Rodrigues",
-            "url": "https://eduardosrodriguesdev.com.br/",
-            "sameAs": [
-                "https://github.com/eduardo-s-rodrigues",
-                "https://www.linkedin.com/in/eduardo-rodrigues-402181193/"
-            ],
-            "workLocation": {
-                "@type": "Place",
-                "name": "Piracicaba/SP"
-            },
-            "jobTitle": "Analista de Sistemas Jr. | Desenvolvedor Python Jr."
-        }
-    </script>
 </head>
-
 <body>
     <a class="link-pular" href="#conteudo-principal">Pular para o conteúdo principal</a>
 
@@ -59,13 +24,7 @@
                 <span>Eduardo</span>
             </a>
 
-            <button
-                class="botao-menu"
-                type="button"
-                aria-label="Abrir menu de navegação"
-                aria-controls="menu-principal"
-                aria-expanded="false"
-            >
+            <button class="botao-menu" type="button" aria-label="Abrir menu de navegação" aria-controls="menu-principal" aria-expanded="false">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -74,52 +33,33 @@
             <div class="navegacao-menu" id="menu-principal">
                 <a href="#inicio">Início</a>
                 <a href="#sobre">Sobre</a>
-                <a href="#projeto">Projeto</a>
-                <a href="#tecnologias">Tecnologias</a>
+                <a href="#projetos">Projetos</a>
                 <a href="#experiencia">Experiência</a>
+                <a href="#tecnologias">Tecnologias</a>
                 <a href="#curriculo">Currículo</a>
                 <a href="#contato">Contato</a>
-
-                <a
-                    class="botao-vagascan"
-                    href="https://vagasscan.eduardosrodriguesdev.com.br/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Abrir projeto VagaScan"
-                >
-                    <span class="vagascan-vaga">Vaga</span><span class="vagascan-scan">Scan</span>
-                    <span class="vagascan-seta" aria-hidden="true">↗</span>
-                 </a>
             </div>
         </nav>
     </header>
 
+    <main id="conteudo-principal">
+        <section class="secao-inicio inicio-v2" id="inicio" aria-labelledby="titulo-inicio">
             <div class="inicio-conteudo limite-conteudo">
                 <div class="inicio-texto">
                     <p class="texto-destaque">Olá, eu sou</p>
                     <h1 id="titulo-inicio">Eduardo Rodrigues</h1>
                     <p class="inicio-cargo">Analista de Sistemas Jr. <span aria-hidden="true">|</span> Desenvolvedor Python Jr.</p>
-                    <p class="inicio-descricao">
-                        Estudante de Análise e Desenvolvimento de Sistemas, desenvolvendo projetos práticos com Python,
-                        SQL, banco de dados, automação e processamento de imagens.
+                    <p class="inicio-descricao inicio-descricao-v2">
+                        Estudante de Análise e Desenvolvimento de Sistemas. Gosto de pegar problemas do dia a dia,
+                        entender o processo e transformar isso em uma solução que alguém consiga usar de verdade.
+                        Hoje meu foco maior está em automação e visão computacional.
                     </p>
 
                     <div class="grupo-botoes">
-                        <a class="botao botao-primario" href="#projeto">Ver projeto</a>
-                        <a class="botao botao-secundario" href="https://github.com/eduardo-s-rodrigues" target="_blank" rel="noopener noreferrer">
-                            GitHub <span aria-hidden="true">↗</span>
-                        </a>
-                        <a class="botao botao-secundario" href="https://www.linkedin.com/in/eduardo-rodrigues-402181193/" target="_blank" rel="noopener noreferrer">
-                            LinkedIn <span aria-hidden="true">↗</span>
-                        </a>
-                        
-                        <a
-                            class="botao botao-texto"
-                            href="assets/curriculo/CV_Eduardo_Rodrigues.pdf"
-                            download
-                        >       
-                            Baixar currículo
-                        </a>
+                        <a class="botao botao-primario" href="#projetos">Ver projetos</a>
+                        <a class="botao botao-secundario" href="https://github.com/eduardo-s-rodrigues" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                        <a class="botao botao-secundario" href="https://www.linkedin.com/in/eduardo-rodrigues-402181193/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                        <a class="botao botao-texto" href="assets/curriculo/CV_Eduardo_Rodrigues.pdf" download>Baixar currículo</a>
                     </div>
 
                     <p class="inicio-disponibilidade">
@@ -128,361 +68,197 @@
                     </p>
                 </div>
 
-                <article class="cartao-foco" aria-labelledby="titulo-foco">
-                    <div class="cartao-foco-topo">
-                        <span class="foco-simbolo" aria-hidden="true">&lt;/&gt;</span>
-                        <span class="foco-status">Em desenvolvimento</span>
+                <aside class="painel-agora" aria-labelledby="titulo-agora">
+                    <p class="painel-agora-rotulo">No momento</p>
+                    <h2 id="titulo-agora">Aprendendo enquanto construo.</h2>
+                    <p>Uso projetos próprios para praticar o caminho completo: entender o problema, desenvolver, testar, revisar e colocar para funcionar.</p>
+                    <div class="painel-agora-focos" aria-label="Focos atuais">
+                        <span>Automação</span>
+                        <span>Visão computacional</span>
+                        <span>Python</span>
+                        <span>Sistemas</span>
                     </div>
-                    <p class="cartao-rotulo">Foco profissional</p>
-                    <h2 id="titulo-foco">Python, Sistemas, Dados e Automação</h2>
-                    <p>Construindo soluções práticas enquanto desenvolvo uma base sólida em tecnologia.</p>
-                    <ul class="lista-tags" aria-label="Tecnologias em foco">
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>SQLite</li>
-                        <li>OpenCV</li>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                    </ul>
-                    <div class="linha-codigo" aria-hidden="true">
-                        <span>01</span>
-                        <code>print("pronto para evoluir")</code>
-                    </div>
-                </article>
+                    <p class="painel-agora-nota">Mais interesse em resolver bem o problema do que em empilhar tecnologia.</p>
+                </aside>
             </div>
         </section>
 
         <section class="secao secao-sobre" id="sobre" aria-labelledby="titulo-sobre">
-            <div class="limite-conteudo">
-                <div class="cabecalho-secao">
+            <div class="limite-conteudo sobre-v2">
+                <div class="cabecalho-secao sobre-v2-cabecalho">
                     <p class="secao-indice">01 — Sobre mim</p>
-                    <h2 id="titulo-sobre">Tecnologia aplicada a problemas reais</h2>
-                    <p>
-                        Estou em transição para tecnologia e curso Análise e Desenvolvimento de Sistemas. Nos projetos,
-                        pratico Python, SQL, SQLite, Git e GitHub. Minha experiência anterior com liderança, atendimento
-                        e processos fortaleceu a comunicação, a organização e a resolução de problemas que aplico
-                        enquanto continuo aprendendo.
-                    </p>
+                    <h2 id="titulo-sobre">Eu gosto de entender o problema antes de pensar na tecnologia.</h2>
                 </div>
 
-                <div class="grade-tres-colunas">
-                    <article class="cartao-informacao">
-                        <span class="numero-cartao" aria-hidden="true">01</span>
-                        <h3>Aprendizado prático</h3>
-                        <p>Projetos próprios para exercitar lógica, programação, banco de dados e organização de código.</p>
-                    </article>
-                    <article class="cartao-informacao">
-                        <span class="numero-cartao" aria-hidden="true">02</span>
-                        <h3>Visão de processos</h3>
-                        <p>Vivência com liderança, atendimento e rotinas operacionais para analisar situações e organizar soluções.</p>
-                    </article>
-                    <article class="cartao-informacao">
-                        <span class="numero-cartao" aria-hidden="true">03</span>
-                        <h3>Evolução contínua</h3>
-                        <p>Estudo constante de Python, SQL, desenvolvimento web, automação e fundamentos de sistemas.</p>
-                    </article>
+                <div class="sobre-v2-texto">
+                    <p>Minha transição para tecnologia começou pela curiosidade de automatizar coisas e entender como os sistemas funcionam por trás da tela. Desde então venho estudando programação e criando projetos próprios para aplicar o que aprendo em situações mais próximas da vida real.</p>
+                    <p>Minha experiência anterior com atendimento e operação também influencia bastante a forma como trabalho. Aprendi a lidar com prioridade, rotina, pessoas e imprevistos. Hoje tento levar essa mesma visão para software: primeiro entender o contexto, depois organizar as etapas e só então construir.</p>
+                </div>
+
+                <div class="sobre-v2-pontos" aria-label="Como gosto de trabalhar">
+                    <div><strong>Entender</strong><span>O que realmente precisa ser resolvido.</span></div>
+                    <div><strong>Construir</strong><span>Uma solução simples o bastante para ser usada.</span></div>
+                    <div><strong>Melhorar</strong><span>Testar, ouvir feedback e corrigir o que não ficou bom.</span></div>
                 </div>
             </div>
         </section>
 
-        <section class="secao secao-projeto" id="projeto" aria-labelledby="titulo-projeto">
-            <div class="limite-conteudo">
-                <div class="cabecalho-secao">
-                    <p class="secao-indice">02 — Projeto principal</p>
-                    <h2 id="titulo-projeto">Portaria Inteligente — Reconhecimento de Placas</h2>
-                    <p>Sistema desenvolvido em Python para reconhecimento de placas veiculares, validação de acesso e registro de eventos.</p>
-                </div>
-
-                <div class="projeto-apresentacao">
-                    <div class="projeto-midia">
-                        <!--
-                            Imagem real futura: substitua o bloco .projeto-visual por:
-                            <img class="projeto-imagem-real" src="assets/imagens/projetos/lpr-demonstracao.webp"
-                                 alt="Demonstração do sistema LPR reconhecendo uma placa veicular"
-                                 width="1200" height="800" loading="lazy">
-                        -->
-                        <div class="projeto-visual" role="img" aria-label="Representação visual temporária do sistema de reconhecimento de placas">
-                            <div class="visual-barra" aria-hidden="true">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <small>portaria_inteligente.py</small>
-                            </div>
-                            <div class="visual-camera" aria-hidden="true">
-                                <span class="canto canto-superior-esquerdo"></span>
-                                <span class="canto canto-superior-direito"></span>
-                                <span class="canto canto-inferior-esquerdo"></span>
-                                <span class="canto canto-inferior-direito"></span>
-                                <div class="placa-veiculo">
-                                    <small>BRASIL</small>
-                                    <strong>ABC1D23</strong>
-                                </div>
-                                <span class="status-leitura">PLACA IDENTIFICADA</span>
-                            </div>
-                            <div class="visual-resultado" aria-hidden="true">
-                                <span>status</span>
-                                <strong>ACESSO VALIDADO</strong>
-                                <span>confiança</span>
-                                <strong>OCR processado</strong>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="projeto-resumo">
-                        <p class="projeto-rotulo">Solução em desenvolvimento</p>
-                        <h3>Automação para controle de acesso veicular</h3>
-                        <div class="projeto-contexto">
-                            <div>
-                                <h4>Problema</h4>
-                                <p>Automatizar a identificação de veículos e organizar os registros de acesso.</p>
-                            </div>
-                            <div>
-                                <h4>Solução</h4>
-                                <p>Aplicação em Python que processa imagens, reconhece placas, consulta autorizações e registra eventos.</p>
-                            </div>
-                        </div>
-                        <ul class="lista-tags lista-tags-projeto" aria-label="Tecnologias usadas no projeto">
-                            <li>Python</li>
-                            <li>OpenCV</li>
-                            <li>Tesseract OCR</li>
-                            <li>SQLite</li>
-                            <li>Regex</li>
-                            <li>Git</li>
-                            <li>GitHub</li>
-                            <li>Pytest</li>
-                        </ul>
-                        <!-- Substitua o endereço abaixo pelo link exato do repositório LPR quando ele estiver disponível. -->
-                        <a class="botao botao-primario" href="https://github.com/eduardo-s-rodrigues" target="_blank" rel="noopener noreferrer">
-                            Ver no GitHub <span aria-hidden="true">↗</span>
-                        </a>
-                    </div>
-                </div>
-
-                <article class="projeto-desafios" aria-labelledby="titulo-desafios">
-                    <div>
-                        <p class="projeto-rotulo">Desenvolvimento</p>
-                        <h3 id="titulo-desafios">Principais desafios técnicos</h3>
-                    </div>
-                    <ul>
-                        <li>Tratamento de imagens</li>
-                        <li>Reconhecimento OCR</li>
-                        <li>Padrões antigo e Mercosul</li>
-                        <li>Placas de carro e moto</li>
-                        <li>Rotação e orientação da imagem</li>
-                        <li>Redução de registros duplicados</li>
-                        <li>Persistência em SQLite</li>
-                        <li>Modularização</li>
-                        <li>Testes de validação</li>
-                    </ul>
-                </article>
-
-                <div class="projeto-etapas">
-                    <article class="cartao-etapa etapa-implementada">
-                        <p class="etapa-status"><span aria-hidden="true">✓</span> Implementado</p>
-                        <h3>Funcionalidades concluídas</h3>
-                        <ul class="lista-verificacao">
-                            <li>Captura pela câmera e tratamento de imagens</li>
-                            <li>Reconhecimento de caracteres usando OCR</li>
-                            <li>Validação de placas antigas e padrão Mercosul</li>
-                            <li>Leitura de placas de carro e moto</li>
-                            <li>Cadastro e consulta de veículos</li>
-                            <li>Identificação de autorizado, inativo e não cadastrado</li>
-                            <li>Persistência de eventos e logs em SQLite</li>
-                            <li>Armazenamento de imagens</li>
-                            <li>Código modular e testes com pytest</li>
-                        </ul>
-                    </article>
-
-                    <article class="cartao-etapa etapa-evolucao">
-                        <p class="etapa-status"><span aria-hidden="true">●</span> Em evolução</p>
-                        <h3>Próximas melhorias</h3>
-                        <ul class="lista-verificacao">
-                            <li>Melhoria da detecção</li>
-                            <li>Melhoria do OCR</li>
-                            <li>Interface administrativa</li>
-                            <li>Exclusão e desativação de cadastros</li>
-                        </ul>
-                    </article>
-
-                    <article class="cartao-etapa etapa-futura">
-                        <p class="etapa-status"><span aria-hidden="true">○</span> Futuro</p>
-                        <h3>Possibilidades planejadas</h3>
-                        <ul class="lista-verificacao">
-                            <li>YOLO</li>
-                            <li>PaddleOCR</li>
-                            <li>Câmera externa</li>
-                            <li>Integração com portão</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="secao secao-tecnologias" id="tecnologias" aria-labelledby="titulo-tecnologias">
+        <section class="secao secao-projetos-v2" id="projetos" aria-labelledby="titulo-projetos">
             <div class="limite-conteudo">
                 <div class="cabecalho-secao cabecalho-secao-curto">
-                    <p class="secao-indice">03 — Tecnologias</p>
-                    <h2 id="titulo-tecnologias">Conhecimentos em construção</h2>
-                    <p>Tecnologias e ferramentas aplicadas nos estudos e projetos práticos.</p>
+                    <p class="secao-indice">02 — Projetos</p>
+                    <h2 id="titulo-projetos">Projetos que mostram como eu penso e construo.</h2>
+                    <p>Aqui o foco não é só a tecnologia usada, mas o problema, a solução e o que o projeto já consegue entregar.</p>
                 </div>
 
-                <div class="grade-tecnologias">
-                    <article class="cartao-tecnologia">
-                        <span class="tecnologia-simbolo" aria-hidden="true">{ }</span>
-                        <h3>Desenvolvimento</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>SQL</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>C# básico</li>
-                        </ul>
+                <div class="projetos-v2-lista">
+                    <article class="projeto-case projeto-case-destaque" aria-labelledby="titulo-organizameudia">
+                        <div class="projeto-case-topo">
+                            <span class="projeto-case-numero">01</span>
+                            <span class="projeto-case-status">Produto próprio em desenvolvimento</span>
+                        </div>
+
+                        <div class="projeto-case-grid">
+                            <div class="projeto-case-conteudo">
+                                <p class="projeto-case-kicker">OrganizaMeuDia</p>
+                                <h3 id="titulo-organizameudia">Organizar a rotina sem espalhar tudo em vários lugares.</h3>
+                                <p class="projeto-case-resumo">Comecei o OrganizaMeuDia pensando em um problema simples: compromissos, tarefas, finanças e listas acabam ficando separados em vários aplicativos. A proposta é reunir essas partes da rotina em um único ambiente, com uma experiência que funcione bem no computador e no celular.</p>
+
+                                <div class="projeto-case-blocos">
+                                    <div><span>O problema</span><p>Informações importantes do dia a dia ficam espalhadas entre agenda, listas, aplicativos de tarefas e controles financeiros.</p></div>
+                                    <div><span>O que construí</span><p>Uma aplicação web com agenda, tarefas, organização financeira e listas de compras, adaptada para desktop e mobile.</p></div>
+                                    <div><span>Na prática</span><p>O usuário consegue ver o que precisa fazer, acompanhar compromissos e organizar diferentes áreas da rotina no mesmo lugar.</p></div>
+                                </div>
+
+                                <ul class="lista-tags lista-tags-projeto" aria-label="Áreas envolvidas no OrganizaMeuDia">
+                                    <li>Aplicação web</li>
+                                    <li>Responsivo</li>
+                                    <li>Autenticação</li>
+                                    <li>Banco de dados</li>
+                                    <li>Segurança</li>
+                                </ul>
+                                <p class="projeto-case-privado">Código privado por ser um produto próprio em desenvolvimento.</p>
+                            </div>
+
+                            <figure class="projeto-case-midia">
+                                <img src="assets/imagens/projetos/organizameudia-visao-geral.webp" alt="OrganizaMeuDia em desktop e celular, mostrando agenda, tarefas e organização financeira" width="720" height="480" loading="lazy" decoding="async">
+                                <figcaption>Visão geral do produto em desktop e mobile.</figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="projeto-case-galeria">
+                            <img src="assets/imagens/projetos/organizameudia-modulos.webp" alt="Telas do OrganizaMeuDia mostrando a visão do dia, agenda mensal e tarefas" width="640" height="427" loading="lazy" decoding="async">
+                        </div>
                     </article>
-                    <article class="cartao-tecnologia">
-                        <span class="tecnologia-simbolo" aria-hidden="true">DB</span>
-                        <h3>Banco de dados</h3>
-                        <ul>
-                            <li>SQLite</li>
-                            <li>Bancos relacionais</li>
-                            <li>Modelagem</li>
-                            <li>Consultas SQL</li>
-                            <li>Validação de dados</li>
-                        </ul>
-                    </article>
-                    <article class="cartao-tecnologia">
-                        <span class="tecnologia-simbolo" aria-hidden="true">CV</span>
-                        <h3>Bibliotecas e aplicações</h3>
-                        <ul>
-                            <li>OpenCV</li>
-                            <li>Tesseract OCR</li>
-                            <li>Processamento de imagens</li>
-                            <li>Automação</li>
-                            <li>Regex</li>
-                        </ul>
-                    </article>
-                    <article class="cartao-tecnologia">
-                        <span class="tecnologia-simbolo" aria-hidden="true">&gt;_</span>
-                        <h3>Ferramentas e qualidade</h3>
-                        <ul>
-                            <li>Git</li>
-                            <li>GitHub</li>
-                            <li>VS Code</li>
-                            <li>Ambientes virtuais</li>
-                            <li>Pytest</li>
-                            <li>Ruff</li>
-                        </ul>
+
+                    <article class="projeto-case projeto-case-lpr" aria-labelledby="titulo-lpr">
+                        <div class="projeto-case-topo">
+                            <span class="projeto-case-numero">02</span>
+                            <span class="projeto-case-status">Automação e visão computacional</span>
+                        </div>
+
+                        <div class="projeto-case-grid projeto-case-grid-lpr">
+                            <div class="projeto-case-conteudo">
+                                <p class="projeto-case-kicker">Portaria Inteligente — LPR</p>
+                                <h3 id="titulo-lpr">Transformar a imagem de uma placa em uma decisão de acesso.</h3>
+                                <p class="projeto-case-resumo">O projeto nasceu da ideia de automatizar uma sequência que normalmente seria manual: identificar o veículo, conferir se ele está autorizado e guardar o registro do acesso.</p>
+
+                                <div class="projeto-case-blocos">
+                                    <div><span>O problema</span><p>Conferir veículos manualmente exige atenção constante e deixa o histórico dependente de registros separados.</p></div>
+                                    <div><span>O que construí</span><p>Um fluxo que captura a imagem, identifica a placa, valida o formato, consulta o cadastro e registra o evento.</p></div>
+                                    <div><span>Resultado do protótipo</span><p>Já diferencia veículos autorizados, inativos e não cadastrados, mantém histórico e evita registros repetidos em sequência.</p></div>
+                                </div>
+
+                                <ul class="lista-tags lista-tags-projeto" aria-label="Tecnologias usadas no LPR">
+                                    <li>Python</li>
+                                    <li>OpenCV</li>
+                                    <li>OCR</li>
+                                    <li>SQLite</li>
+                                    <li>Pytest</li>
+                                </ul>
+                                <a class="botao botao-secundario" href="https://github.com/eduardo-s-rodrigues/lpr-portaria-inteligente" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a>
+                            </div>
+
+                            <div class="projeto-lpr-visual" role="img" aria-label="Fluxo simplificado do projeto de reconhecimento de placas">
+                                <div class="lpr-etapa"><span>01</span><strong>Captura</strong><small>Câmera recebe a imagem do veículo.</small></div>
+                                <div class="lpr-linha" aria-hidden="true"></div>
+                                <div class="lpr-etapa"><span>02</span><strong>Leitura</strong><small>O sistema localiza e interpreta a placa.</small></div>
+                                <div class="lpr-linha" aria-hidden="true"></div>
+                                <div class="lpr-etapa"><span>03</span><strong>Validação</strong><small>Consulta o cadastro e verifica a autorização.</small></div>
+                                <div class="lpr-linha" aria-hidden="true"></div>
+                                <div class="lpr-etapa lpr-etapa-final"><span>04</span><strong>Registro</strong><small>Salva o evento para consulta posterior.</small></div>
+                            </div>
+                        </div>
                     </article>
                 </div>
             </div>
         </section>
 
         <section class="secao secao-experiencia" id="experiencia" aria-labelledby="titulo-experiencia">
-            <div class="limite-conteudo">
+            <div class="limite-conteudo experiencia-v2">
                 <div class="cabecalho-secao cabecalho-secao-curto">
-                    <p class="secao-indice">04 — Experiência</p>
-                    <h2 id="titulo-experiencia">Competências que também constroem tecnologia</h2>
+                    <p class="secao-indice">03 — Experiência</p>
+                    <h2 id="titulo-experiencia">Antes do código, aprendi a lidar com operação real.</h2>
                 </div>
 
-                <article class="experiencia-cartao">
-                    <div class="experiencia-marca" aria-hidden="true">ER</div>
-                    <div class="experiencia-conteudo">
-                        <p class="experiencia-tipo">Experiência profissional</p>
-                        <h3>Supervisor Operacional — Território Pet</h3>
-                        <p>
-                            Experiência com liderança de equipe, atendimento ao cliente, organização de processos,
-                            controle de estoque, acompanhamento de rotinas e resolução de problemas operacionais.
-                        </p>
-                        <p class="experiencia-conexao">
-                            Essas competências contribuem de forma natural para analisar situações, comunicar decisões,
-                            colaborar com equipes e buscar melhorias em processos também na área de tecnologia.
-                        </p>
-                        <ul class="lista-tags" aria-label="Competências profissionais">
-                            <li>Liderança</li>
-                            <li>Comunicação</li>
-                            <li>Organização</li>
-                            <li>Resolução de problemas</li>
-                            <li>Responsabilidade</li>
-                            <li>Atendimento</li>
-                            <li>Trabalho em equipe</li>
-                            <li>Análise de situações</li>
-                            <li>Melhoria de processos</li>
-                        </ul>
+                <article class="experiencia-v2-cartao">
+                    <div class="experiencia-v2-meta">
+                        <span>2020 — 2026</span>
+                        <strong>Território Pet</strong>
+                        <small>Atendimento → Supervisão Operacional</small>
+                    </div>
+                    <div class="experiencia-v2-corpo">
+                        <p>Trabalhei com atendimento, rotina operacional, estoque, organização de processos e acompanhamento de equipe. Na supervisão, parte do trabalho era perceber o que precisava de atenção, organizar prioridades e resolver imprevistos sem perder a operação de vista.</p>
+                        <p>Essa experiência mudou a forma como eu enxergo tecnologia. Hoje, quando começo um projeto, tento primeiro entender quem vai usar, onde o processo complica e o que realmente precisa ficar mais simples.</p>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section
-            class="secao secao-curriculo"
-            id="curriculo"
-            aria-labelledby="titulo-curriculo"
-        >
-            <div class="curriculo-conteudo limite-conteudo">
-                <div>
-                    <p class="secao-indice">05 — Currículo</p>
-
-                    <h2 id="titulo-curriculo">
-                        Conheça minha trajetória completa
-                    </h2>
-
-                    <p>
-                        Um único currículo direcionado para oportunidades
-                        em Sistemas, Dados e Desenvolvimento Python.
-                    </p>
+        <section class="secao secao-tecnologias" id="tecnologias" aria-labelledby="titulo-tecnologias">
+            <div class="limite-conteudo tecnologias-v2">
+                <div class="cabecalho-secao cabecalho-secao-curto">
+                    <p class="secao-indice">04 — Tecnologias</p>
+                    <h2 id="titulo-tecnologias">Ferramentas que venho usando para construir.</h2>
+                    <p>Sem tentar parecer especialista em tudo: estas são as tecnologias que fazem parte dos meus estudos e projetos atuais.</p>
                 </div>
 
-                <a
-                     class="botao botao-claro"
-                     href="assets/curriculo/CV_Eduardo_Rodrigues.pdf"
-                     download
-                >
-                    Baixar currículo em PDF
-                    <span aria-hidden="true">↓</span>
-                </a>
+                <div class="tecnologias-v2-grupos">
+                    <div><span>Desenvolvimento</span><p>Python, SQL, HTML, CSS, JavaScript e APIs.</p></div>
+                    <div><span>Dados e backend</span><p>SQLite, bancos relacionais, modelagem, consultas e validação de dados.</p></div>
+                    <div><span>Automação e visão</span><p>OpenCV, Tesseract OCR, processamento de imagens e regex.</p></div>
+                    <div><span>Qualidade e fluxo</span><p>Git, GitHub, pytest, Ruff, ambientes virtuais e organização modular.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-curriculo" id="curriculo" aria-labelledby="titulo-curriculo">
+            <div class="curriculo-conteudo limite-conteudo curriculo-v2">
+                <div>
+                    <p class="secao-indice">05 — Currículo</p>
+                    <h2 id="titulo-curriculo">Quer ver minha trajetória em uma página?</h2>
+                    <p>O currículo reúne formação, experiência e conhecimentos técnicos de forma mais direta.</p>
+                </div>
+                <a class="botao botao-claro" href="assets/curriculo/CV_Eduardo_Rodrigues.pdf" download>Baixar currículo em PDF <span aria-hidden="true">↓</span></a>
             </div>
         </section>
 
         <section class="secao secao-contato" id="contato" aria-labelledby="titulo-contato">
-            <div class="contato-conteudo limite-conteudo">
+            <div class="contato-conteudo limite-conteudo contato-v2">
                 <div class="cabecalho-secao cabecalho-secao-curto">
                     <p class="secao-indice">06 — Contato</p>
-                    <h2 id="titulo-contato">Vamos conversar sobre tecnologia?</h2>
-                    <p>Estou disponível para oportunidades presenciais, híbridas ou remotas e aberto a novos desafios.</p>
+                    <h2 id="titulo-contato">Se fizer sentido conversar, me chama.</h2>
+                    <p>Para vaga, projeto ou uma troca de ideia sobre tecnologia, estes são os melhores canais.</p>
                 </div>
 
                 <div class="contato-acoes">
-                    <a class="contato-link" href="https://www.linkedin.com/in/eduardo-rodrigues-402181193/" target="_blank" rel="noopener noreferrer">
-                        <span>
-                            <small>Perfil profissional</small>
-                            LinkedIn
-                        </span>
-                        <span aria-hidden="true">↗</span>
-                    </a>
-                    <a class="contato-link" href="https://github.com/eduardo-s-rodrigues" target="_blank" rel="noopener noreferrer">
-                        <span>
-                            <small>Projetos e código</small>
-                            GitHub
-                        </span>
-                        <span aria-hidden="true">↗</span>
-                    </a>
+                    <a class="contato-link" href="https://www.linkedin.com/in/eduardo-rodrigues-402181193/" target="_blank" rel="noopener noreferrer"><span><small>Perfil profissional</small>LinkedIn</span><span aria-hidden="true">↗</span></a>
+                    <a class="contato-link" href="https://github.com/eduardo-s-rodrigues" target="_blank" rel="noopener noreferrer"><span><small>Projetos e código</small>GitHub</span><span aria-hidden="true">↗</span></a>
                     <div class="contato-email">
-                        <button
-                            class="contato-link"
-                            id="botao-copiar-email"
-                            type="button"
-                            data-email="rodrigues.eduardojw@gmail.com"
-                        >
-                            <span>
-                                <small>Contato direto</small>
-                                <span id="texto-copiar-email">Copiar e-mail</span>
-                            </span>
-                            <span aria-hidden="true">+</span>
-                        </button>
+                        <button class="contato-link" id="botao-copiar-email" type="button" data-email="rodrigues.eduardojw@gmail.com"><span><small>Contato direto</small><span id="texto-copiar-email">Copiar e-mail</span></span><span aria-hidden="true">+</span></button>
                         <a class="link-enviar-email" href="mailto:rodrigues.eduardojw@gmail.com">Enviar e-mail</a>
                     </div>
                 </div>
-
                 <p class="mensagem-email" id="mensagem-email" role="status" aria-live="polite"></p>
             </div>
         </section>
@@ -490,10 +266,8 @@
 
     <footer class="rodape">
         <div class="rodape-conteudo limite-conteudo">
-            <p>© <span id="ano-atual"></span> Eduardo Rodrigues. Desenvolvido com HTML, CSS e JavaScript.</p>
-            <a class="voltar-topo" href="#inicio" aria-label="Voltar ao início da página">
-                Voltar ao topo <span aria-hidden="true">↑</span>
-            </a>
+            <p>© <span id="ano-atual"></span> Eduardo Rodrigues. Feito e mantido por mim.</p>
+            <a class="voltar-topo" href="#inicio" aria-label="Voltar ao início da página">Voltar ao topo <span aria-hidden="true">↑</span></a>
         </div>
     </footer>
 </body>
