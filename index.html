@@ -9,10 +9,36 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#07111f">
     <link rel="canonical" href="https://eduardosrodriguesdev.com.br/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Eduardo Rodrigues | Portfólio de Tecnologia">
+    <meta property="og:description" content="Projetos em automação, visão computacional, Python e desenvolvimento de sistemas.">
+    <meta property="og:url" content="https://eduardosrodriguesdev.com.br/">
+    <meta property="og:site_name" content="Portfólio de Eduardo Rodrigues">
+
     <link rel="icon" href="assets/imagens/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/portfolio-v2.css">
     <script src="js/script.js" defer></script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Eduardo Rodrigues",
+            "url": "https://eduardosrodriguesdev.com.br/",
+            "sameAs": [
+                "https://github.com/eduardo-s-rodrigues",
+                "https://www.linkedin.com/in/eduardo-rodrigues-402181193/"
+            ],
+            "workLocation": {
+                "@type": "Place",
+                "name": "Piracicaba/SP"
+            },
+            "jobTitle": "Analista de Sistemas Jr. | Desenvolvedor Python Jr."
+        }
+    </script>
 </head>
 <body>
     <a class="link-pular" href="#conteudo-principal">Pular para o conteúdo principal</a>
@@ -50,8 +76,8 @@
                     <h1 id="titulo-inicio">Eduardo Rodrigues</h1>
                     <p class="inicio-cargo">Analista de Sistemas Jr. <span aria-hidden="true">|</span> Desenvolvedor Python Jr.</p>
                     <p class="inicio-descricao inicio-descricao-v2">
-                        Estudante de Análise e Desenvolvimento de Sistemas. Gosto de pegar problemas do dia a dia,
-                        entender o processo e transformar isso em uma solução que alguém consiga usar de verdade.
+                        Estudante de Análise e Desenvolvimento de Sistemas. Gosto de entender problemas do dia a dia,
+                        organizar o processo e transformar isso em uma solução que alguém consiga usar de verdade.
                         Hoje meu foco maior está em automação e visão computacional.
                     </p>
 
@@ -69,7 +95,7 @@
                 </div>
 
                 <aside class="painel-agora" aria-labelledby="titulo-agora">
-                    <p class="painel-agora-rotulo">No momento</p>
+                    <p class="painel-agora-rotulo">Agora</p>
                     <h2 id="titulo-agora">Aprendendo enquanto construo.</h2>
                     <p>Uso projetos próprios para praticar o caminho completo: entender o problema, desenvolver, testar, revisar e colocar para funcionar.</p>
                     <div class="painel-agora-focos" aria-label="Focos atuais">
@@ -86,19 +112,19 @@
         <section class="secao secao-sobre" id="sobre" aria-labelledby="titulo-sobre">
             <div class="limite-conteudo sobre-v2">
                 <div class="cabecalho-secao sobre-v2-cabecalho">
-                    <p class="secao-indice">01 — Sobre mim</p>
-                    <h2 id="titulo-sobre">Eu gosto de entender o problema antes de pensar na tecnologia.</h2>
+                    <p class="secao-indice">01 — Sobre</p>
+                    <h2 id="titulo-sobre">Entender primeiro. Construir depois.</h2>
                 </div>
 
                 <div class="sobre-v2-texto">
-                    <p>Minha transição para tecnologia começou pela curiosidade de automatizar coisas e entender como os sistemas funcionam por trás da tela. Desde então venho estudando programação e criando projetos próprios para aplicar o que aprendo em situações mais próximas da vida real.</p>
-                    <p>Minha experiência anterior com atendimento e operação também influencia bastante a forma como trabalho. Aprendi a lidar com prioridade, rotina, pessoas e imprevistos. Hoje tento levar essa mesma visão para software: primeiro entender o contexto, depois organizar as etapas e só então construir.</p>
+                    <p>Minha transição para tecnologia começou pela curiosidade de automatizar coisas e entender como os sistemas funcionam por trás da tela. Desde então venho estudando programação e criando projetos próprios para aplicar o que aprendo em situações próximas da vida real.</p>
+                    <p>Minha experiência anterior com atendimento e operação influencia bastante a forma como trabalho. Aprendi a lidar com prioridade, rotina, pessoas e imprevistos. Hoje tento levar essa mesma visão para software: entender o contexto, organizar as etapas e construir sem complicar o que pode ser simples.</p>
                 </div>
 
                 <div class="sobre-v2-pontos" aria-label="Como gosto de trabalhar">
                     <div><strong>Entender</strong><span>O que realmente precisa ser resolvido.</span></div>
-                    <div><strong>Construir</strong><span>Uma solução simples o bastante para ser usada.</span></div>
-                    <div><strong>Melhorar</strong><span>Testar, ouvir feedback e corrigir o que não ficou bom.</span></div>
+                    <div><strong>Construir</strong><span>Uma solução clara e utilizável.</span></div>
+                    <div><strong>Melhorar</strong><span>Testar, ouvir feedback e ajustar.</span></div>
                 </div>
             </div>
         </section>
@@ -107,48 +133,38 @@
             <div class="limite-conteudo">
                 <div class="cabecalho-secao cabecalho-secao-curto">
                     <p class="secao-indice">02 — Projetos</p>
-                    <h2 id="titulo-projetos">Projetos que mostram como eu penso e construo.</h2>
-                    <p>Aqui o foco não é só a tecnologia usada, mas o problema, a solução e o que o projeto já consegue entregar.</p>
+                    <h2 id="titulo-projetos">O que eu construí para aprender e resolver problemas.</h2>
+                    <p>Primeiro o que cada projeto resolve. Depois, para quem quiser se aprofundar, como ele foi feito.</p>
                 </div>
 
                 <div class="projetos-v2-lista">
                     <article class="projeto-case projeto-case-destaque" aria-labelledby="titulo-organizameudia">
                         <div class="projeto-case-topo">
                             <span class="projeto-case-numero">01</span>
-                            <span class="projeto-case-status">Produto próprio em desenvolvimento</span>
+                            <span class="projeto-case-status">Produto próprio</span>
                         </div>
 
                         <div class="projeto-case-grid">
                             <div class="projeto-case-conteudo">
                                 <p class="projeto-case-kicker">OrganizaMeuDia</p>
-                                <h3 id="titulo-organizameudia">Organizar a rotina sem espalhar tudo em vários lugares.</h3>
-                                <p class="projeto-case-resumo">Comecei o OrganizaMeuDia pensando em um problema simples: compromissos, tarefas, finanças e listas acabam ficando separados em vários aplicativos. A proposta é reunir essas partes da rotina em um único ambiente, com uma experiência que funcione bem no computador e no celular.</p>
+                                <h3 id="titulo-organizameudia">Uma rotina menos espalhada.</h3>
+                                <p class="projeto-case-resumo">O OrganizaMeuDia nasceu de um problema simples: compromissos, tarefas, finanças e listas acabam ficando em lugares diferentes. A proposta é reunir essas partes da rotina em um único ambiente, sem transformar organização em mais uma tarefa.</p>
 
                                 <div class="projeto-case-blocos">
-                                    <div><span>O problema</span><p>Informações importantes do dia a dia ficam espalhadas entre agenda, listas, aplicativos de tarefas e controles financeiros.</p></div>
-                                    <div><span>O que construí</span><p>Uma aplicação web com agenda, tarefas, organização financeira e listas de compras, adaptada para desktop e mobile.</p></div>
-                                    <div><span>Na prática</span><p>O usuário consegue ver o que precisa fazer, acompanhar compromissos e organizar diferentes áreas da rotina no mesmo lugar.</p></div>
+                                    <div><span>Problema</span><p>Informações importantes do dia a dia ficam divididas entre agenda, listas, tarefas e controles financeiros.</p></div>
+                                    <div><span>Solução</span><p>Uma aplicação web com agenda, tarefas, organização financeira e listas de compras, adaptada para desktop e mobile.</p></div>
+                                    <div><span>Na prática</span><p>O usuário consegue visualizar prioridades e organizar diferentes partes da rotina no mesmo lugar.</p></div>
                                 </div>
 
-                                <ul class="lista-tags lista-tags-projeto" aria-label="Áreas envolvidas no OrganizaMeuDia">
-                                    <li>Aplicação web</li>
-                                    <li>Responsivo</li>
-                                    <li>Autenticação</li>
-                                    <li>Banco de dados</li>
-                                    <li>Segurança</li>
-                                </ul>
-
-                                <div class="grupo-botoes">
-                                    <a class="botao botao-primario" href="https://app.organizameudia.com.br/" target="_blank" rel="noopener noreferrer">
-                                        Acessar OrganizaMeuDia <span aria-hidden="true">↗</span>
-                                    </a>
+                                <div class="projeto-case-acoes">
+                                    <a class="botao botao-primario" href="https://app.organizameudia.com.br/" target="_blank" rel="noopener noreferrer">Acessar produto <span aria-hidden="true">↗</span></a>
+                                    <span class="projeto-case-privado">Código privado por ser um produto próprio em desenvolvimento.</span>
                                 </div>
-                                <p class="projeto-case-privado">Código privado por ser um produto próprio em desenvolvimento.</p>
                             </div>
 
                             <figure class="projeto-case-midia">
                                 <img src="assets/imagens/projetos/organizameudia-visao-geral.webp" alt="OrganizaMeuDia em desktop e celular, mostrando agenda, tarefas e organização financeira" width="720" height="480" loading="lazy" decoding="async">
-                                <figcaption>Visão geral do produto em desktop e mobile.</figcaption>
+                                <figcaption>Desktop e mobile usando a mesma experiência.</figcaption>
                             </figure>
                         </div>
 
@@ -157,45 +173,67 @@
                         </div>
                     </article>
 
-                    <article class="projeto-case projeto-case-lpr" aria-labelledby="titulo-lpr">
-                        <div class="projeto-case-topo">
-                            <span class="projeto-case-numero">02</span>
-                            <span class="projeto-case-status">Automação e visão computacional</span>
-                        </div>
+                    <div class="projetos-secundarios" aria-label="Outros projetos">
+                        <article class="projeto-mini" aria-labelledby="titulo-lpr">
+                            <div class="projeto-mini-topo">
+                                <span class="projeto-case-numero">02</span>
+                                <span class="projeto-case-status">Automação + visão computacional</span>
+                            </div>
+                            <p class="projeto-case-kicker">Portaria Inteligente — LPR</p>
+                            <h3 id="titulo-lpr">Da imagem da placa à decisão de acesso.</h3>
+                            <p>O protótipo automatiza uma sequência que normalmente seria manual: identifica a placa, confere a situação do veículo e registra o acesso.</p>
 
-                        <div class="projeto-case-grid projeto-case-grid-lpr">
-                            <div class="projeto-case-conteudo">
-                                <p class="projeto-case-kicker">Portaria Inteligente — LPR</p>
-                                <h3 id="titulo-lpr">Transformar a imagem de uma placa em uma decisão de acesso.</h3>
-                                <p class="projeto-case-resumo">O projeto nasceu da ideia de automatizar uma sequência que normalmente seria manual: identificar o veículo, conferir se ele está autorizado e guardar o registro do acesso.</p>
-
-                                <div class="projeto-case-blocos">
-                                    <div><span>O problema</span><p>Conferir veículos manualmente exige atenção constante e deixa o histórico dependente de registros separados.</p></div>
-                                    <div><span>O que construí</span><p>Um fluxo que captura a imagem, identifica a placa, valida o formato, consulta o cadastro e registra o evento.</p></div>
-                                    <div><span>Resultado do protótipo</span><p>Já diferencia veículos autorizados, inativos e não cadastrados, mantém histórico e evita registros repetidos em sequência.</p></div>
-                                </div>
-
-                                <ul class="lista-tags lista-tags-projeto" aria-label="Tecnologias usadas no LPR">
-                                    <li>Python</li>
-                                    <li>OpenCV</li>
-                                    <li>OCR</li>
-                                    <li>SQLite</li>
-                                    <li>Pytest</li>
-                                </ul>
-                                <a class="botao botao-secundario" href="https://github.com/eduardo-s-rodrigues/lpr-portaria-inteligente" target="_blank" rel="noopener noreferrer">Ver código no GitHub <span aria-hidden="true">↗</span></a>
+                            <div class="projeto-mini-resultado">
+                                <strong>O que já entrega</strong>
+                                <span>Reconhece placas, diferencia veículos autorizados, inativos e não cadastrados e mantém o histórico dos eventos.</span>
                             </div>
 
                             <div class="projeto-lpr-visual" role="img" aria-label="Fluxo simplificado do projeto de reconhecimento de placas">
-                                <div class="lpr-etapa"><span>01</span><strong>Captura</strong><small>Câmera recebe a imagem do veículo.</small></div>
+                                <div class="lpr-etapa"><span>01</span><strong>Captura</strong><small>Recebe a imagem.</small></div>
                                 <div class="lpr-linha" aria-hidden="true"></div>
-                                <div class="lpr-etapa"><span>02</span><strong>Leitura</strong><small>O sistema localiza e interpreta a placa.</small></div>
+                                <div class="lpr-etapa"><span>02</span><strong>Leitura</strong><small>Interpreta a placa.</small></div>
                                 <div class="lpr-linha" aria-hidden="true"></div>
-                                <div class="lpr-etapa"><span>03</span><strong>Validação</strong><small>Consulta o cadastro e verifica a autorização.</small></div>
+                                <div class="lpr-etapa"><span>03</span><strong>Validação</strong><small>Consulta a autorização.</small></div>
                                 <div class="lpr-linha" aria-hidden="true"></div>
-                                <div class="lpr-etapa lpr-etapa-final"><span>04</span><strong>Registro</strong><small>Salva o evento para consulta posterior.</small></div>
+                                <div class="lpr-etapa lpr-etapa-final"><span>04</span><strong>Registro</strong><small>Salva o evento.</small></div>
                             </div>
-                        </div>
-                    </article>
+
+                            <div class="projeto-mini-rodape">
+                                <span>Python · OpenCV · OCR · SQLite</span>
+                                <a href="https://github.com/eduardo-s-rodrigues/lpr-portaria-inteligente" target="_blank" rel="noopener noreferrer">Ver código <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </article>
+
+                        <article class="projeto-mini" aria-labelledby="titulo-vagascan">
+                            <div class="projeto-mini-topo">
+                                <span class="projeto-case-numero">03</span>
+                                <span class="projeto-case-status">Projeto de estudo</span>
+                            </div>
+                            <p class="projeto-case-kicker"><span class="vagascan-vaga">Vaga</span><span class="vagascan-scan">Scan</span></p>
+                            <h3 id="titulo-vagascan">Aprender front-end e APIs construindo algo útil.</h3>
+                            <p>Comecei o VagaScan para entender melhor o básico de front-end e como uma aplicação conversa com APIs. O estudo acabou virando uma ferramenta funcional para pesquisar vagas de tecnologia e organizar oportunidades.</p>
+
+                            <div class="projeto-mini-resultado">
+                                <strong>O que aprendi</strong>
+                                <span>Integração com API externa, tratamento dos dados recebidos, filtros, interface web, responsividade e publicação de uma aplicação.</span>
+                            </div>
+
+                            <div class="vagascan-demo" aria-hidden="true">
+                                <div class="vagascan-demo-topo"><span><b>Vaga</b>Scan</span><small>Busca de vagas</small></div>
+                                <div class="vagascan-demo-busca">Python Júnior <span>Buscar</span></div>
+                                <div class="vagascan-demo-linha"><strong>Desenvolvedor Python Jr.</strong><small>Remoto · Brasil</small></div>
+                                <div class="vagascan-demo-linha"><strong>Analista de Sistemas</strong><small>Híbrido · São Paulo</small></div>
+                            </div>
+
+                            <div class="projeto-mini-rodape">
+                                <span>Front-end · APIs · Python · FastAPI</span>
+                                <div class="projeto-mini-links">
+                                    <a href="https://vagasscan.eduardosrodriguesdev.com.br/" target="_blank" rel="noopener noreferrer">Acessar <span aria-hidden="true">↗</span></a>
+                                    <a href="https://github.com/eduardo-s-rodrigues/VagaScan" target="_blank" rel="noopener noreferrer">Código <span aria-hidden="true">↗</span></a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -242,8 +280,8 @@
             <div class="curriculo-conteudo limite-conteudo curriculo-v2">
                 <div>
                     <p class="secao-indice">05 — Currículo</p>
-                    <h2 id="titulo-curriculo">Quer ver minha trajetória em uma página?</h2>
-                    <p>O currículo reúne formação, experiência e conhecimentos técnicos de forma mais direta.</p>
+                    <h2 id="titulo-curriculo">Minha trajetória, de forma direta.</h2>
+                    <p>Formação, experiência e conhecimentos técnicos reunidos em uma página.</p>
                 </div>
                 <a class="botao botao-claro" href="assets/curriculo/CV_Eduardo_Rodrigues.pdf" download>Baixar currículo em PDF <span aria-hidden="true">↓</span></a>
             </div>
